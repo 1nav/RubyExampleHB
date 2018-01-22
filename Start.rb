@@ -1,8 +1,12 @@
 
-variableA = 1
+variableA = ARGV[0].to_i
+a = 0
 
-if variableA > 2
-  puts "True"
-elsif variableA <= 2
-  puts "False"
+while a < 10
+  if variableA > 2
+    puts "True"
+  elsif variableA <= 2
+    puts "False"
+  end
+  a += 1
 end
