@@ -16,7 +16,9 @@ def methodSimple(variableA = 0 ,a = 0)
       puts "False"
     end
     a += 1
-  end
+   end
+
+  return a
 end
 
-methodSimple
+puts methodSimple
