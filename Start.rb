@@ -1,7 +1,10 @@
+#items
+#users
+#carts
+#order
 
 
 def methodSimple(variableA = 0 ,a = 0)
-
   if variableA == 0 && a == 0      # if variable is empty
     variableA = ARGV[0].to_i
   else
@@ -21,4 +24,15 @@ def methodSimple(variableA = 0 ,a = 0)
   return a
 end
 
-puts methodSimple
+class Item
+
+  def price
+    rand(100)
+  end
+
+end
+
+intem1 = Item.new
+intem2 = Item.new
+puts intem1.price
+puts intem2.price
