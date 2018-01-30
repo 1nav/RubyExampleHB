@@ -30,9 +30,14 @@ class Item
     rand(100)
   end
 
+  attr_reader :price, :weight
+  attr_writer :price, :weight
+  #attr_accessor :price, :weight
+
 end
 
 intem1 = Item.new
-intem2 = Item.new
+intem1.price =10
 puts intem1.price
-puts intem2.price
+intem1.weight =20
+puts intem1.weight
