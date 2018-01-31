@@ -10,7 +10,7 @@ class Cart
     @items.push item
   end
 
-  def remove_item(item)
+  def remove_item
     @items.pop
   end
 
